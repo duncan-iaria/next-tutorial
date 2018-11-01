@@ -1,13 +1,13 @@
-import { Layout } from '../components';
+import { Layout, StyledAnchor, StyledList } from '../components';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 
 const PostLink = props => (
-  <li>
-    <Link as={`/p/${props.id}`} href={`/post?title=${props.title}`}>
-      <a>{props.title}</a>
+  <StyledList>
+    <Link as={`/p/${props.id}`} href={`/post?title=${props.id}`}>
+      <StyledAnchor>{props.title}</StyledAnchor>
     </Link>
-  </li>
+  </StyledList>
 );
 
 const Index = props => (
@@ -29,6 +29,30 @@ const Index = props => (
         </li>
       ))}
     </ul>
+    {/* <style jsx>{`
+      h1,
+      a {
+        font-family: 'Arial';
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+        margin: 5px 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+
+      a:hover {
+        opacity: 0.6;
+      }
+    `}</style> */}
   </Layout>
 );
 
