@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
 import fetch from 'isomorphic-unfetch';
-import { Layout } from '../components';
+import { Layout, HeaderText } from '../components';
 import Markdown from 'react-markdown';
 
 const Content = props => (
   <Fragment>
-    <h1>{props.show.name}</h1>
+    <HeaderText>{props.show.name}</HeaderText>
     <p>{props.show.summary.replace(/<[/]?p>/g, '')}</p>
     <img src={props.show.image.medium} />
   </Fragment>
