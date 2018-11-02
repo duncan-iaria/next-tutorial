@@ -5,6 +5,8 @@ export const StyledAnchor = styled.a`
   text-decoration: none;
   color: blue;
 
+  margin-right: 12px;
+
   :hover {
     cursor: pointer;
     opacity: 0.6;

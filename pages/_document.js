@@ -13,8 +13,8 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>My page</title>
           {this.props.styleTags}
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
         </Head>
         <body>
           <Main />

@@ -1,6 +1,7 @@
 import Header from './Header';
 import Layout from './Layout';
 import { StyledAnchor, StyledListItem } from './formElements';
-import { HeaderText } from './typography';
+import { StyledH1, StyledH2 } from './typography';
+import GlobalStyles from './GlobalStyles';
 
-export { Header, Layout, StyledAnchor, StyledListItem, HeaderText };
+export { Header, Layout, GlobalStyles, StyledAnchor, StyledListItem, StyledH1, StyledH2 };

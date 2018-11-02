@@ -1,16 +1,13 @@
 import Link from 'next/link';
-
-const linkStyle = {
-  marginRight: 15,
-};
+import { StyledAnchor } from './';
 
 const Header = () => (
   <div>
     <Link href="/">
-      <a style={linkStyle}>Home</a>
+      <StyledAnchor>Home</StyledAnchor>
     </Link>
     <Link href="/about">
-      <a style={linkStyle}>About</a>
+      <StyledAnchor>About</StyledAnchor>
     </Link>
   </div>
 );

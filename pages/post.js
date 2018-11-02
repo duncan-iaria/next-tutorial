@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
 import fetch from 'isomorphic-unfetch';
-import { Layout, HeaderText } from '../components';
+import { Layout, StyledH1 } from '../components';
 import Markdown from 'react-markdown';
 
 const Content = props => (
   <Fragment>
-    <HeaderText>{props.show.name}</HeaderText>
+    <StyledH1>{props.show.name}</StyledH1>
     <p>{props.show.summary.replace(/<[/]?p>/g, '')}</p>
     <img src={props.show.image.medium} />
   </Fragment>
@@ -26,26 +26,6 @@ And here's the content:
      `}
       />
     </div>
-    <style jsx global>{`
-      .markdown {
-        font-family: 'Arial';
-      }
-
-      .markdown a {
-        text-decoration: none;
-        color: blue;
-      }
-
-      .markdown a:hover {
-        opacity: 0.6;
-      }
-
-      .markdown h3 {
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase;
-      }
-    `}</style>
 
     <Content {...props} />
   </Layout>

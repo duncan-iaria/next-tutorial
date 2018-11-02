@@ -1,16 +1,18 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-export const HeaderText = styled.h1`
-  font-size: 24px;
+export const StyledH1 = styled.h1`
+  font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: 'Arial';
 
-  /* example on how to use props, this is not actually in play */
-  ${props =>
-    props.h === '1' &&
-    css`
-      font-size: 32px;
-      text-transform: uppercase;
-    `};
+  margin: 12px 0;
+  padding: 12px;
+`;
+
+export const StyledH2 = styled.h2`
+  font-size: 24px;
+  font-weight: bold;
+
+  padding: 12px;
+  margin: 12px 0;
 `;
